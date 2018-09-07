@@ -1,13 +1,13 @@
 {
   "manifest_version": 2,
-  "name": "molimediagroup",
+  "name": "wilbe",
   "description": "",
   "version": "1.0.0",
   "icons": { "16": "img/icon.png", "48": "img/icon.png", "128": "img/icon.png" },
   "browser_action": {
-    "default_title": "小助手1.0",
-    "default_icon": "img/icon.png",
-    "default_popup": "popup.html"
+    "default_title": "wilbe1.0",
+    "default_icon": "img/icon.png"
+    // "default_popup": "popup.html"
   },
   "permissions": [
     "cookies",
@@ -29,7 +29,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://*.ittun.com/*"],
+      "matches": ["https://market.m.taobao.com/*"],
       "js": ["js/jquery.min.js", "content.js"]
     }
   ]
